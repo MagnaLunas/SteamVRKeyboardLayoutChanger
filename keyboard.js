@@ -4900,6 +4900,7 @@ var kbLanguage = "english";
                }), this.toggleShiftPlaneWith("normal"))
            }
            initializeKeyHandlers() {
+               let there = this;
                this.m_keyTypeToHandler = new Map,
                this.m_keyTypeToHandler.set("key", this.handleKey),
                this.m_keyTypeToHandler.set("del", this.handleDel),
@@ -4909,24 +4910,23 @@ var kbLanguage = "english";
                this.m_keyTypeToHandler.set("cancel", this.handleCancel),
                this.m_keyTypeToHandler.set("clear", this.handleClear),
                this.m_keyTypeToHandler.set("return", this.handleReturn),
-               this.m_keyTypeToHandler.set("lang", this.handleLang),
-               this.m_keyTypeToHandler.set("langen", this.getLangHandler("english")),
-               this.m_keyTypeToHandler.set("langpt", this.getLangHandler("portuguese")),
-               this.m_keyTypeToHandler.set("langda", this.getLangHandler("danish")),
-               this.m_keyTypeToHandler.set("langnl", this.getLangHandler("dutch")),
-               this.m_keyTypeToHandler.set("langfi", this.getLangHandler("finnish")),
-               this.m_keyTypeToHandler.set("langfr", this.getLangHandler("french")),
-               this.m_keyTypeToHandler.set("langde", this.getLangHandler("german")),
-               this.m_keyTypeToHandler.set("langhu", this.getLangHandler("hungarian")),
-               this.m_keyTypeToHandler.set("langit", this.getLangHandler("italian")),
-               this.m_keyTypeToHandler.set("langnb", this.getLangHandler("norwegian")),
-               this.m_keyTypeToHandler.set("langpl", this.getLangHandler("polish")),
-               this.m_keyTypeToHandler.set("langro", this.getLangHandler("romanian")),
-               this.m_keyTypeToHandler.set("langru", this.getLangHandler("russian")),
-               this.m_keyTypeToHandler.set("langes", this.getLangHandler("spanish")),
-               this.m_keyTypeToHandler.set("langsv", this.getLangHandler("swedish")),
-               this.m_keyTypeToHandler.set("langtr", this.getLangHandler("turkish")),
-               this.m_keyTypeToHandler.set("languk", this.getLangHandler("ukranian"))
+               this.m_keyTypeToHandler.set("langen", this.getLangHandler(there, "english")),
+               this.m_keyTypeToHandler.set("langpt", this.getLangHandler(there, "portuguese")),
+               this.m_keyTypeToHandler.set("langda", this.getLangHandler(there, "danish")),
+               this.m_keyTypeToHandler.set("langnl", this.getLangHandler(there, "dutch")),
+               this.m_keyTypeToHandler.set("langfi", this.getLangHandler(there, "finnish")),
+               this.m_keyTypeToHandler.set("langfr", this.getLangHandler(there, "french")),
+               this.m_keyTypeToHandler.set("langde", this.getLangHandler(there, "german")),
+               this.m_keyTypeToHandler.set("langhu", this.getLangHandler(there, "hungarian")),
+               this.m_keyTypeToHandler.set("langit", this.getLangHandler(there, "italian")),
+               this.m_keyTypeToHandler.set("langnb", this.getLangHandler(there, "norwegian")),
+               this.m_keyTypeToHandler.set("langpl", this.getLangHandler(there, "polish")),
+               this.m_keyTypeToHandler.set("langro", this.getLangHandler(there, "romanian")),
+               this.m_keyTypeToHandler.set("langru", this.getLangHandler(there, "russian")),
+               this.m_keyTypeToHandler.set("langes", this.getLangHandler(there, "spanish")),
+               this.m_keyTypeToHandler.set("langsv", this.getLangHandler(there, "swedish")),
+               this.m_keyTypeToHandler.set("langtr", this.getLangHandler(there, "turkish")),
+               this.m_keyTypeToHandler.set("languk", this.getLangHandler(there, "ukranian"))
            }
            findShiftPlane(e) {
                for (let t of this.state.langLayout.shiftPlanes)
@@ -5001,9 +5001,11 @@ var kbLanguage = "english";
                    textPos: 0
                }), this.updateSuggestions("")
            }
-           getLangHandler(lang) {
+           getLangHandler(k, lang) {
                return function(e) {
                    kbLanguage = lang
+                   k.getLayout(lang)
+                   k.onLayoutLoaded()
                }
            }
            isWhite(e) {

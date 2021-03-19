@@ -3,9 +3,7 @@ Change your SteamVR keyboard layout :)
 
 ### How to use:
 1. Press the language button below the keyboard.
-2. Close keyboard.
-3. Open keyboard.
-4. Enjoy :)
+2. Enjoy :)
 
 ### How to install:
 Place files into (**SteamVR\resources\webinterface\dashboard**) folder.
