@@ -2,7 +2,7 @@
 Change your SteamVR keyboard layout :)
 
 ### How to use:
-1. Press the "globe" button.
+1. Press the language button below the keyboard.
 2. Close keyboard.
 3. Open keyboard.
 4. Enjoy :)
@@ -12,4 +12,4 @@ Place files into (**SteamVR\resources\webinterface\dashboard**) folder.
 
 After this clear your SteamVR cache (Remove **AppData\Local\SteamVR\htmlcache\Cache** folder).
 
-![alt text](https://i.imgur.com/t2F1Mrf.png)
+![alt text](https://i.imgur.com/uGSCAGR.png)
