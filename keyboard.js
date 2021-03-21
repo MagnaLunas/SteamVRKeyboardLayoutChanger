@@ -5006,7 +5006,7 @@ var kbLanguage = "english";
                    kbLanguage = lang
                    k.m_languageToLayout = new Map
                    k.getLayout("base")
-                   k.getLayout(k.language())
+                   k.getLayout(lang)
                    k.onLayoutLoaded()
                }
            }
