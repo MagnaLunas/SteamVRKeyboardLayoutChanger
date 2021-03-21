@@ -5004,7 +5004,9 @@ var kbLanguage = "english";
            getLangHandler(k, lang) {
                return function(e) {
                    kbLanguage = lang
-                   k.getLayout(lang)
+                   k.m_languageToLayout = new Map
+                   k.getLayout("base")
+                   k.getLayout(k.language())
                    k.onLayoutLoaded()
                }
            }
