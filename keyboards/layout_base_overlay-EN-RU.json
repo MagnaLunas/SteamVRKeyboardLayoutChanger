@@ -90,22 +90,7 @@
             "height": "15%",
             "keys": [
                 { "type": "langen", "text": "EN", "flexShrink": 1 },
-                { "type": "langru", "text": "RU", "flexShrink": 1 },
-                { "type": "langpt", "text": "PT", "flexShrink": 1 },
-                { "type": "langda", "text": "DA", "flexShrink": 1 },
-                { "type": "langnl", "text": "NL", "flexShrink": 1 },
-                { "type": "langfi", "text": "FI", "flexShrink": 1 },
-                { "type": "langfr", "text": "FR", "flexShrink": 1 },
-                { "type": "langde", "text": "DE", "flexShrink": 1 },
-                { "type": "langhu", "text": "HU", "flexShrink": 1 },
-                { "type": "langit", "text": "IT", "flexShrink": 1 },
-                { "type": "langnb", "text": "NB", "flexShrink": 1 },
-                { "type": "langpl", "text": "PL", "flexShrink": 1 },
-                { "type": "langro", "text": "RO", "flexShrink": 1 },
-                { "type": "langes", "text": "ES", "flexShrink": 1 },
-                { "type": "langsv", "text": "SV", "flexShrink": 1 },
-                { "type": "langtr", "text": "TR", "flexShrink": 1 },
-                { "type": "languk", "text": "UK", "flexShrink": 1 }
+                { "type": "langru", "text": "RU", "flexShrink": 1 }
             ]
         }
     ]

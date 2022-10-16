@@ -6,8 +6,12 @@ Change your SteamVR keyboard layout :)
 2. Enjoy :)
 
 ### How to install:
-Place files into (**SteamVR\resources\webinterface\dashboard**) folder.
+Copy files into (**SteamVR\resources\webinterface\dashboard**) folder.
 
-After this clear your SteamVR cache (Remove **AppData\Local\SteamVR\htmlcache\Cache** folder).
+If you need certain languages in the layout, modify **layout_base_overlay.json** as you wish.
+
+Clean your SteamVR cache (Remove **%localappdata%\SteamVR\htmlcache\Cache** folder).
+
+(Optional) Mark **keyboard.js** and **layout_base_overlay.json** as read-only so you don't lose your changes after a SteamVR update.
 
 ![alt text](https://i.imgur.com/uGSCAGR.png)
