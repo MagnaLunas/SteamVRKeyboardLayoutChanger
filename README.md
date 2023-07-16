@@ -5,6 +5,8 @@ Change your SteamVR keyboard layout :)
 1. Press the language button below the keyboard.
 2. Enjoy :)
 
+### Compatible with 1.26.x only. **May not work on SteamVR Beta**.
+
 ### How to install:
 Copy files into (**SteamVR\resources\webinterface\dashboard**) folder.
 
