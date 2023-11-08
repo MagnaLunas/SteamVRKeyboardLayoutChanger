@@ -1,6 +1,8 @@
 # SteamVRKeyboardLayoutChanger
 Change your SteamVR keyboard layout :)
 
+## [OBSOLETE] SteamVR 2.0 is out and it has keyboard ported from Steam Deck UI. This repository is no longer maintained.
+
 ### How to use:
 1. Press the language button below the keyboard.
 2. Enjoy :)
